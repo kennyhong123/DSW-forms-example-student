@@ -11,8 +11,8 @@ def render_response():
     color=request.args['color']
     if color == 'pink':
         reply = "Disguisting"
-       else:
-        reply="I hate color because I'm colorblind"
+    else:
+        reply = "I hate color because I'm colorblind"
     return render_template('response.html', response = reply)
     
 if __name__=="__main__":
