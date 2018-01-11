@@ -8,7 +8,7 @@ def render_main():
 
 @app.route("/response", methods=["POST"])
 def render_response():
-    color=request.forms['color']
+    color=request.form['color']
     if color == 'pink':
         reply = "Disguisting"
     else:
